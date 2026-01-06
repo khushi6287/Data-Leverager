@@ -1,3 +1,53 @@
+# Data Leverager – Power Query ETL Project
+
+## 📌 Project Title  
+**Data Leverager – Sales & Employee Data Transformation using Power Query**
+
+## 📌 Objective  
+The objective of this project is to perform end-to-end data preparation (ETL) using Power BI Power Query, including:  
+
+- Loading data from multiple Excel files  
+- Cleaning and transforming raw data  
+- Applying date, numeric, and text transformations  
+- Merging datasets  
+- Creating dynamic refresh using parameters  
+
+> **Note:** No DAX or visualizations are used. This project strictly focuses on Power Query ETL operations.
+
+## 📌 Data Sources  
+### 1️⃣ Sales Data (Folder Source)  
+- `Sales_Jan.xlsx`  
+- `Sales_Feb.xlsx`  
+- `Sales_Mar.xlsx`  
+- Loaded using **Folder → Combine & Transform**
+
+### 2️⃣ Employee Data  
+- `Employee.xlsx`  
+- Contains employee details such as Department, Region, Join Date, Birth Date.
+
+## 📌 Key Transformations Performed  
+
+### 🔹 Data Cleaning  
+- Removed blank rows and columns  
+- Promoted first row as headers  
+- Renamed columns for standardization  
+- Removed duplicates  
+- Filtered null values  
+
+### 🔹 Text Transformations  
+- UPPER  
+- TRIM  
+- CLEAN  
+- Replace special characters  
+- Split columns (where applicable)  
+
+### 🔹 Numeric Transformations  
+- Renamed `TotalSale` → `Revenue`  
+- Rounded Revenue to 2 decimals  
+- Created **Profit** column:  
+Profit = Revenue – Cost
+
+text
 
 ### 🔹 Date & Time Transformations  
 - From **Order Date**:  
